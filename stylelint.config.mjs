@@ -88,7 +88,6 @@ export default {
     "number-max-precision": null,
     "color-function-notation": null,
     "import-notation": null,
-    "scss/at-import-partial-extension": null,
     "scss/at-extend-no-missing-placeholder": null,
     "scss/no-duplicate-mixins": null,
     "property-no-vendor-prefix": null,
