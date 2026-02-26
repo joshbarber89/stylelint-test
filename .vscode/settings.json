@@ -12,7 +12,7 @@
   "stylelint.validate": ["css", "scss", "vue"],
   "stylelint.snippet": ["css", "scss", "vue"],
   "stylelint.stylelintPath": "node_modules/stylelint",
-  "stylelint.configFile": "stylelint.config.js",
+  "stylelint.configFile": "stylelint.config.mjs",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
     "source.fixAll.prettier": "always",
