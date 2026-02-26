@@ -1,0 +1,37 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "eslint.validate": ["javascript", "vue", "typescript"],
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.packageManager": "yarn",
+  "stylelint.validate": ["css", "scss", "vue"],
+  "stylelint.snippet": ["css", "scss", "vue"],
+  "stylelint.stylelintPath": "node_modules/stylelint",
+  "stylelint.configFile": "stylelint.config.js",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.prettier": "always",
+    "source.fixAll.stylelint": "always"
+  },
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "ts"
+  ],
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  "eslint.useFlatConfig": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

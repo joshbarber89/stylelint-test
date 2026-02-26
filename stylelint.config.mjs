@@ -1,0 +1,97 @@
+export default {
+  extends: ["stylelint-config-standard"],
+  overrides: [
+    {
+      files: ["*.vue", "**/*.vue"],
+      extends: [
+        "stylelint-config-standard-scss",
+        "stylelint-config-recommended-vue/scss",
+      ],
+    },
+    {
+      files: ["*.scss", "**/*.scss"],
+      extends: ["stylelint-config-standard-scss"],
+    },
+  ],
+  rules: {
+    "comment-no-empty": true,
+    "comment-whitespace-inside": "always",
+    "color-hex-length": "long",
+    // 'no-duplicate-at-import-rules': true,
+    "no-duplicate-selectors": true,
+    // 'value-keyword-case': 'lower',
+    "rule-empty-line-before": [
+      "always",
+      {
+        except: ["first-nested"],
+        ignore: ["after-comment"],
+      },
+    ],
+    // 'function-name-case': 'lower',
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-id-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
+    "selector-class-pattern": "^([a-z][a-z0-9]*)((-|__|--)[a-z0-9]+)*$",
+    "selector-attribute-quotes": "always",
+    "max-nesting-depth": 10,
+    "no-invalid-double-slash-comments": true,
+    "font-family-no-duplicate-names": true,
+    "no-descending-specificity": null,
+    "no-empty-source": null,
+    "block-no-empty": null,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        ignore: ["consecutive-duplicates-with-different-syntaxes"],
+      },
+    ],
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        ignoreMediaFeatureNames: ["min-device-pixel-ratio"],
+      },
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        ignorePseudoElements: ["v-deep", "input-placeholder"],
+      },
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        ignorePseudoClasses: [
+          "deep",
+          "global",
+          "placeholder",
+          "input-placeholder",
+        ],
+      },
+    ],
+    "custom-property-pattern": null,
+    "scss/comment-no-empty": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/no-global-function-names": null,
+    "scss/at-mixin-pattern": null,
+    "scss/at-if-no-null": null,
+    "scss/operator-no-unspaced": null,
+    "scss/operator-no-newline-after": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/at-function-pattern": null,
+    "scss/at-rule-conditional-no-parentheses": null,
+    "custom-property-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "declaration-block-no-shorthand-property-overrides": null,
+    "scss/load-no-partial-leading-underscore": null,
+    "at-rule-no-vendor-prefix": null,
+    "number-max-precision": null,
+    "color-function-notation": null,
+    "import-notation": null,
+    "scss/at-import-partial-extension": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "scss/no-duplicate-mixins": null,
+    "property-no-vendor-prefix": null,
+    "length-zero-no-unit": null,
+  },
+};
